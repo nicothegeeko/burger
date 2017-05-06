@@ -1,16 +1,38 @@
-# burger
+# Burger Database
 
 # Week of 14 Homework Node Express Handlebars
 
-### Overview
-
-Created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM.
+	## Link to Heroku: https://good-burger.herokuapp.com/
 
 
+### Overview of App 
 
-#### Directory structure
+Created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. 
 
-All the recommended files and directories from the steps above should look like the following structure:
+### Instructions
+
+Using MySQL a database was created to capture burgers within in the database. You can add burgers to the database using the Add a burger function at the bottom of the page and clicking the "Add Burger" button. Then you can also sort through all of the good burgers located on the left and find what burgers are avaliable to eat. Then click the "Eat it Up" button in order to eat the really good burger. At this point the burger will remain in the right list under "burgers that have been eaten" and you may longer eat the burger. 
+
+### Technologies Used: 
+
+* Heroku 
+* Node.js 
+* JavaScript
+* Bootstrap
+* Jquery 
+* CSS
+* HTML
+* Handlebars
+* Body Parser 
+* Express
+
+
+
+#### Directory structure 
+
+This was one of the most challanging aspects for me in this application in addition to using Handlebars. 
+
+Below is the config: 
 
 ```
 .
@@ -50,14 +72,4 @@ All the recommended files and directories from the steps above should look like 
 
 - - -
 
-### One More Thing
 
-This is a really tough homework assignment, but we want you to put in your best effort to finish it.
-
-If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
-
-**Good Luck!**
-
-## Copyright
-
-Coding Boot Camp (C) 2016. All Rights Reserved.
