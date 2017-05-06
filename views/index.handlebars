@@ -5,11 +5,11 @@
 </div>
 
 
-
+{{!-- Handlebars section for routing the burgers within the database and also the html for the burgers within the database --}}
 <div class="row">
   <div class="col-md-4 col-md-offset-2">
 
-<h2>Hot Burgers Ready to Eat!</h2>
+<h2 class="title">Good Burgers, Ready to Eat!</h2>
 
 <ul>
   {{#each burgers}}
@@ -19,7 +19,7 @@
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
-          <button type="submit">Eat It Up!</button>
+          <button type="submit" class="text">Eat It Up!</button>
         </form>
       </li>
     {{/unless}}
@@ -28,21 +28,16 @@
 
 </div>
 
-
+{{!-- Handlebars section for routing burgers that have been eaten to the frontend and the html  --}}
   <div class="col-md-4">
 
-<h2>Burgers that have been eaten!</h2>
+<h2 class="title"> Burgers that have been eaten!</h2>
 
 <ul>
   {{#each burgers}}
     {{#if this.devoured}}
       <li>
         {{this.burger_name}}
-
-        {{!-- <form action="/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="devoured" value="false">
-          <button type="submit">Can't eat this!</button>
-        </form> --}}
       </li>
     {{/if}}
   {{/each}}
@@ -50,19 +45,22 @@
 
 </div></div>
 
-<h2>Add a Burger</h2>
+{{!-- Adding burger to the database through the various HTML frontend elements --}}
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+
+<h2 class="title">Add a Burger</h2>
 <form class="create-update-form" action="/" method="POST">
 
   <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <label for="ca" class="text">Burger Name:</label>
+    <input type="text" id="ca" name="name" class="text">
   </div>
 
-  {{!-- <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Not Devoured
-  </div> --}}
 
-  <button type="submit">Add Burger</button>
+{{!-- Button for adding a new burger --}}
+
+  <button type="submit" class="text">Add Burger</button>
 </form>
+ </div></div>
