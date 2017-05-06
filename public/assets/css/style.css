@@ -1,5 +1,5 @@
 body {
-    background-image: image-url("../../images/not-on-theme.png");
+    background-image: url("../../images/not-on-theme.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,7 +26,7 @@ li {
 
 .panel {
     background-color: #68b8e0 !important;
-    background-image: image-url("../../images/blue-logo.gif");
+    background-image: url("../../images/blue-logo.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -36,7 +36,7 @@ li {
 }
 
 .title {
-    color: white;
+    color: black;
     font-family: 'Gloria Hallelujah', cursive;
 }
 
